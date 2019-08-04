@@ -2,11 +2,11 @@
 
 namespace Katsana\Geocoder\Tests\Feature\Geocoder;
 
-use Mockery as m;
 use Geocoder\Geocoder;
-use Katsana\Geocoder\Location;
-use Orchestra\Testbench\TestCase;
 use Illuminate\Contracts\Cache\Repository;
+use Katsana\Geocoder\Location;
+use Mockery as m;
+use Orchestra\Testbench\TestCase;
 
 class GeocodeTest extends TestCase
 {

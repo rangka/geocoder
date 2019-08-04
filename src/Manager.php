@@ -14,7 +14,7 @@ class Manager extends \Illuminate\Support\Manager
      *
      * @var string
      */
-    static $projectId = "KATSANA";
+    public static $projectId = 'KATSANA';
 
     /**
      * Create Google driver.
