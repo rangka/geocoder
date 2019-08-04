@@ -87,7 +87,7 @@ abstract class Geocode
                 $coor, $geocoder->reverseQuery(ReverseQuery::fromCoordinates($this->getLatitude(), $this->getLongitude()))
             );
 
-            Jobs\SaveAddressToEloquent::dispatch($location, 'google');
+            \event(new Events\LocationFound($location));
         } catch (CollectionIsEmpty $e) {
             $cache->add($cacheKey, 'N/A', 43800);
         } catch (NoResult $e) {
