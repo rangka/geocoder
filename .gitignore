@@ -1,0 +1,11 @@
+# Composer
+/vendor/
+/composer.lock
+
+# PHPUnit
+/coverage/
+/phpunit.xml
+/.phpunit.result.cache
+
+# Example
+/examples/**/*.php
