@@ -93,6 +93,6 @@ class Manager extends \Illuminate\Support\Manager
      */
     public function getDefaultDriver()
     {
-        return 'google';
+        return 'nominatim';
     }
 }
