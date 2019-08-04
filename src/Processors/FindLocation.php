@@ -61,8 +61,6 @@ class FindLocation
         $driver = $listener->getGeocoderProvider();
         $coor = $geocode->getCoordinate();
 
-        $geocode = new Geocode($latitude, $longitude);
-
         $address = $geocode->resolve($this->geocoder->driver($driver), $this->cache);
 
         if ($address === 'N/A') {
