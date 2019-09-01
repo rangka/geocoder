@@ -1,5 +1,6 @@
 {
     "name": "katsana/geocoder",
+    "description": "Geocoder tools for KATSANA development",
     "type": "library",
     "license": "BSD-3-Clause",
     "authors": [
