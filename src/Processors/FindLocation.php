@@ -41,7 +41,7 @@ class FindLocation
     {
         $this->geocoder = $geocoder;
 
-        $this->cache = \rescue(function () use ($cache) {
+        $this->cache = \rescue(static function () use ($cache) {
             return $cache->tags('geocoder');
         }, $cache, false);
     }
