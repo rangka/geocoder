@@ -41,11 +41,9 @@ class FindLocation
     {
         $this->geocoder = $geocoder;
 
-        if (\method_exists($cache->getStore(), 'tags')) {
-            $this->cache = $cache->tags('geocoder');
-        } else {
-            $this->cache = $cache;
-        }
+        $this->cache = \rescue(function () use ($cache) {
+            return $cache->tags('geocoder');
+        }, $cache, false);
     }
 
     /**
