@@ -55,8 +55,6 @@ class Proximity
 
     /**
      * Get proximity coordinate.
-     *
-     * @return string
      */
     public function getSector(): string
     {
@@ -65,8 +63,6 @@ class Proximity
 
     /**
      * Get proximity coordinate.
-     *
-     * @return string
      */
     public function getCoordinate(): string
     {
@@ -107,8 +103,6 @@ class Proximity
 
     /**
      * Get proximity size.
-     *
-     * @return string
      */
     public function getCacheKey(): string
     {

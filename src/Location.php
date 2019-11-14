@@ -41,8 +41,7 @@ class Location extends Fluent
     /**
      * Parse instanceof self or make from collection.
      *
-     * @param string $searchCoordinate
-     * @param array  $attributes
+     * @param array $attributes
      *
      * @return $this
      */
@@ -61,9 +60,6 @@ class Location extends Fluent
 
     /**
      * Make new instance.
-     *
-     * @param string                                 $searchCoordinate
-     * @param \Geocoder\Model\AddressCollection|null $collection
      *
      * @return $this
      */
@@ -104,8 +100,6 @@ class Location extends Fluent
 
     /**
      * Get location coordinate.
-     *
-     * @return string
      */
     public function getCoordinate(): string
     {
@@ -114,10 +108,6 @@ class Location extends Fluent
 
     /**
      * Resolve address from location.
-     *
-     * @param self $location
-     *
-     * @return string
      */
     public static function resolveAddressFromLocation(self $location): string
     {

@@ -87,11 +87,6 @@ class Geocode extends \Katsana\Geocoder\Geocode
 {
     /**
      * Fetch from local provider.
-     *
-     * @param \Geocoder\Geocoder                     $geocoder
-     * @param \Illuminate\Contracts\Cache\Repository $cache
-     *
-     * @return \Katsana\Geocoder\Location|null
      */
     public function queryFromLocalProvider(Geocoder $geocoder, Repository $cache): ?Location
     {

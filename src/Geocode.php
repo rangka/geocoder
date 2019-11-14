@@ -50,9 +50,6 @@ abstract class Geocode
     /**
      * Resolve address.
      *
-     * @param \Geocoder\Geocoder                     $geocoder
-     * @param \Illuminate\Contracts\Cache\Repository $cache
-     *
      * @return \App\Geocoder\Location|null
      */
     public function resolve(Geocoder $geocoder, Repository $cache): ?Location
@@ -70,9 +67,6 @@ abstract class Geocode
 
     /**
      * Fetch from geocoder.
-     *
-     * @param \Geocoder\Geocoder                     $geocoder
-     * @param \Illuminate\Contracts\Cache\Repository $cache
      *
      * @return \App\Geocoder\Location|null
      */
@@ -104,10 +98,7 @@ abstract class Geocode
     /**
      * Forget resolved address.
      *
-     * @param \Illuminate\Contracts\Cache\Repository $cache
-     * @param \App\Geocoder\Location|null            $address
-     *
-     * @return void
+     * @param \App\Geocoder\Location|null $address
      */
     public function forget(Repository $cache): void
     {
@@ -117,11 +108,7 @@ abstract class Geocode
     /**
      * Cache resolved address.
      *
-     * @param \Illuminate\Contracts\Cache\Repository $cache
-     * @param \App\Geocoder\Location|null            $address
-     * @param bool                                   $force
-     *
-     * @return void
+     * @param \App\Geocoder\Location|null $address
      */
     public function cache(Repository $cache, ?Location $address, bool $force = false): void
     {
@@ -136,8 +123,6 @@ abstract class Geocode
 
     /**
      * Get exact coordinate.
-     *
-     * @return string
      */
     public function getCoordinate(): string
     {
@@ -166,8 +151,6 @@ abstract class Geocode
 
     /**
      * Get proximity coordinate.
-     *
-     * @return string
      */
     public function getProximityCoordinate(): string
     {
@@ -176,8 +159,6 @@ abstract class Geocode
 
     /**
      * Get proximity coordinate.
-     *
-     * @return string
      */
     public function getProximitySector(): string
     {
@@ -186,8 +167,6 @@ abstract class Geocode
 
     /**
      * Get proximity size.
-     *
-     * @return string
      */
     public function getProximityCacheKey(): string
     {
@@ -216,9 +195,6 @@ abstract class Geocode
 
     /**
      * Fetch from local provider.
-     *
-     * @param \Geocoder\Geocoder                     $geocoder
-     * @param \Illuminate\Contracts\Cache\Repository $cache
      *
      * @return \Katsana\Geocoder\Location|null
      */

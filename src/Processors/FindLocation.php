@@ -33,9 +33,6 @@ class FindLocation
 
     /**
      * Construct a new processor.
-     *
-     * @param \Katsana\Geocoder\Manager              $geocoder
-     * @param \Illuminate\Contracts\Cache\Repository $cache
      */
     public function __construct(GeocoderManager $geocoder, Repository $cache)
     {
@@ -48,9 +45,6 @@ class FindLocation
 
     /**
      * Search a location.
-     *
-     * @param \Katsana\Geocoder\Contracts\ReverseGeocodeListener $listener
-     * @param \Katsana\Geocoder\Geocode                          $geocode
      *
      * @return mixed
      */

@@ -15,8 +15,6 @@ class LocationFound
 
     /**
      * Found location.
-     *
-     * @param \Katsana\Geocoder\Location $location
      */
     public function __construct(Location $location)
     {
