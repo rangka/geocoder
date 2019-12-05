@@ -1,5 +1,5 @@
+dist: bionic
 language: php
-dist: xenial
 
 php:
   - 7.2
@@ -33,3 +33,17 @@ script:
 
 after_script:
   - if [[ $setup = 'coveralls' ]]; then php vendor/bin/php-coveralls -v; fi
+
+matrix:
+  include:
+    - php: 7.4
+      env: setup=basic laravel=^5.8
+    - php: 7.4
+      env: setup=basic laravel=^6.0
+    - php: 7.4
+      env: setup=stable laravel=^5.8
+    - php: 7.4
+      env: setup=stable laravel=^6.0
+    - php: 7.4
+      env: setup=lowest laravel=^6.0
+  fast_finish: true
