@@ -28,7 +28,7 @@
     "require-dev": {
         "geocoder-php/google-maps-provider": "^4.4",
         "geocoder-php/nominatim-provider": "^5.0",
-        "orchestra/testbench": "^3.8 || ^4.0"
+        "orchestra/testbench": "^3.8.5 || ^4.0.1"
     },
     "suggest": {
         "geocoder-php/google-maps-provider": "Use google_maps provider for reverse geolocation (^4.4).",
