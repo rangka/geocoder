@@ -49,8 +49,6 @@ abstract class Geocode
 
     /**
      * Resolve address.
-     *
-     * @return \App\Geocoder\Location|null
      */
     public function resolve(Geocoder $geocoder, Repository $cache): ?Location
     {
@@ -67,8 +65,6 @@ abstract class Geocode
 
     /**
      * Fetch from geocoder.
-     *
-     * @return \App\Geocoder\Location|null
      */
     public function queryFromProvider(Geocoder $geocoder, Repository $cache): ?Location
     {
@@ -97,8 +93,6 @@ abstract class Geocode
 
     /**
      * Forget resolved address.
-     *
-     * @param \App\Geocoder\Location|null $address
      */
     public function forget(Repository $cache): void
     {
@@ -107,8 +101,6 @@ abstract class Geocode
 
     /**
      * Cache resolved address.
-     *
-     * @param \App\Geocoder\Location|null $address
      */
     public function cache(Repository $cache, ?Location $address, bool $force = false): void
     {

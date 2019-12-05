@@ -41,7 +41,7 @@ class Location extends Fluent
     /**
      * Parse instanceof self or make from collection.
      *
-     * @param array $attributes
+     * @param self|array $attributes
      *
      * @return $this
      */
