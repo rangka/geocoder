@@ -1,6 +1,6 @@
 <?php
 
-namespace Katsana\Geocoder\Tests\Feature\Geocoder;
+namespace Katsana\Geocoder\Tests\Feature;
 
 use Geocoder\Geocoder;
 use Illuminate\Contracts\Cache\Repository;
