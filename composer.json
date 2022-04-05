@@ -34,11 +34,6 @@
         "geocoder-php/google-maps-provider": "Use google_maps provider for reverse geolocation (^4.4).",
         "geocoder-php/nominatim-provider": "Use nominatim provider for reverse geolocation (^5.0)."
     },
-    "extra": {
-        "branch-alias": {
-            "dev-master": "1.0-dev"
-        }
-    },
     "config": {
         "optimize-autoloader": true,
         "preferred-install": "dist",
