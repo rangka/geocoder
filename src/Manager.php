@@ -5,7 +5,7 @@ namespace Katsana\Geocoder;
 use Geocoder\Provider\GoogleMaps\GoogleMaps;
 use Geocoder\Provider\Nominatim\Nominatim;
 use Geocoder\ProviderAggregator;
-use Http\Adapter\Guzzle6\Client as Guzzle6HttpAdapter;
+use Http\Adapter\Guzzle7\Client as Guzzle7HttpAdapter;
 
 class Manager extends \Illuminate\Support\Manager
 {
@@ -47,7 +47,7 @@ class Manager extends \Illuminate\Support\Manager
      */
     protected function createHttpClient()
     {
-        return new Guzzle6HttpAdapter();
+        return new Guzzle7HttpAdapter();
     }
 
     /**
